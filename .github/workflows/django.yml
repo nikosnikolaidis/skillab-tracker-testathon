@@ -26,4 +26,5 @@ jobs:
       run: |
         source venv/bin/activate
         docker compose up -d
+        docker ps
         python manage.py test
