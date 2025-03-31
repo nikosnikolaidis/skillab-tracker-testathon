@@ -23,10 +23,11 @@ jobs:
       run: |
         cp .env.example.dev .env
         python -m venv venv
-        source ./venv/bin/activate
+        source venv/bin/activate
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     - name: Run Tests
       run: |
+        source venv/bin/activate
         docker compose up -d
         python manage.py test
