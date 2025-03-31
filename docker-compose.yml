@@ -2,7 +2,7 @@ volumes:
   postgres-data:
 
 services:
-  storage:
+  postgres:
     image: postgres:17
     container_name: postgres
     shm_size: 2G
