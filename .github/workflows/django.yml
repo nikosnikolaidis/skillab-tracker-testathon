@@ -28,3 +28,4 @@ jobs:
         docker compose up -d
         docker ps
         python manage.py test
+        docker ps
